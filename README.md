@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo.png" alt="Logo de Elegir Modelo" width="420">
+</p>
+
 # Elegir Modelo
 
 Skill para OpenCode que recomienda el modelo más adecuado según la tarea, el
