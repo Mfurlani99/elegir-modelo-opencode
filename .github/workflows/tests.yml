@@ -12,7 +12,7 @@ jobs:
         powershell: ["5.1", "7"]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Run catalog tests (PowerShell 5.1)
         if: matrix.powershell == '5.1'
         shell: powershell
