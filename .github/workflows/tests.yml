@@ -1,0 +1,23 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  catalog:
+    strategy:
+      matrix:
+        os: [windows-latest]
+        powershell: ["5.1", "7"]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run catalog tests (PowerShell 5.1)
+        if: matrix.powershell == '5.1'
+        shell: powershell
+        run: .\elegir-modelo\tests\catalogo.Tests.ps1
+      - name: Run catalog tests (PowerShell 7)
+        if: matrix.powershell == '7'
+        shell: pwsh
+        run: .\elegir-modelo\tests\catalogo.Tests.ps1

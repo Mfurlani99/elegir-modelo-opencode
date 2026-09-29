@@ -1,0 +1,10 @@
+# Local model catalog cache
+.cache/
+
+# PowerShell/editor artefacts
+*.tmp
+*.bak
+.DS_Store
+
+# Local test output
+test-results/

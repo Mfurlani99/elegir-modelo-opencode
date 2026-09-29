@@ -1,0 +1,24 @@
+name: Feature or provider
+description: Proponer una mejora, alias o compatibilidad con un provider
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema / Problem
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Propuesta / Proposal
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Seguridad / Safety
+      options:
+        - label: No requiere publicar credenciales ni precios hardcodeados.
+          required: true

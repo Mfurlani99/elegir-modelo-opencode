@@ -1,0 +1,5 @@
+interface:
+  display_name: "Elegir Modelo"
+  short_description: "Recomendacion de modelo por tipo de tarea"
+policy:
+  allow_implicit_invocation: false
